@@ -30,4 +30,16 @@ public class MatricesSumTest {
         assertArrayEquals(expected, actual);
 
     }
+
+    @Test
+    public void checkFail() {
+        int[][] expected = {{11, 10}, {10, 10}, {10, 10}};
+        int a1[][] = {{1, 2}, {3, 4}, {5, 6}};
+        int a2[][] = {{9, 8}, {7, 6}, {5, 4}};
+        int[][] actual = object.checkSum(3, 2, a1, a2);
+
+        assertNotEquals(expected, actual);
+
+    }
+
 }

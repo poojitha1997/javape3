@@ -12,7 +12,7 @@ public class week {
         calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
 
         DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
-        System.out.println(df.format(calendar.getTime()));
+     //   System.out.println(df.format(calendar.getTime()));
         String s1 = df.format(calendar.getTime());
         if (s1.equals("Mon 01/07/2019"))
             return true;
@@ -29,7 +29,6 @@ public class week {
 
         DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
         calendar.add(Calendar.DATE, 6);
-        //  System.out.println( c.add(Calendar.DATE,1));
         s2 = (df.format(calendar.getTime()));
         if (s2.equals("Sun 07/07/2019"))
             return true;

@@ -31,4 +31,15 @@ public class VowelstoSpacesTest {
 
 
     }
+    @Test
+    public void checkFail() {
+        String[] expected = {"nd", "ntd Stts", "Grmny", "gypt", "czchslvk"};
+        String[] str = {"India", " States", "Germany", "Egypt", "czechoslovakia"};
+        String[] actual = object.removeVowels(str);
+
+        assertNotEquals(expected, actual);
+
+
+    }
+
 }
